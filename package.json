@@ -1,0 +1,15 @@
+{
+  "name": "reflections_on_the_bay",
+  "version": "1.0.0",
+  "description": " ",
+  "author": "Devin Watson",
+  "homepage": "https://github.com/devin-watson/reflections_on_the_bay#readme",
+  "dependencies": {
+    "lightgallery": "^1.2.21"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devin-watson/reflections_on_the_bay.git"
+  }
+}
