@@ -1,0 +1,100 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+
+body{
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-size: 2em;
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Montserrat", Helvetica, sans-serif;
+	margin: 0;
+}
+
+img{
+	max-width: 200px;
+}
+
+/*******Navigation*******/
+
+header .navbar {
+	padding: 30px 0;
+}
+
+header .navbar-default {
+	background-color: transparent;
+	border: none;
+}
+
+header .navbar-default .navbar-nav a{
+	color: white;
+	padding: 5px 8px;
+	transition: all .9s;
+}
+
+header .navbar-default .navbar-nav a:hover{
+	color: #025269;
+	transition: all .9s;
+}
+
+header .navbar-default .navbar-nav .active a{
+	background-color: transparent;
+	color: #025269;
+	border-bottom: 3px solid #025269;
+	text-shadow: none;
+}
+header .navbar-default .navbar-nav .active a:focus{
+	background-color: transparent;
+	color: #025269;
+}
+
+header .navbar-default .navbar-nav .active a:hover{
+	background-color: transparent;
+	text-shadow: none;
+	color: #025269;
+}
+
+/*******Brand******/
+.navbar-default .navbar-brand{
+	font-size: 1.4em;
+	color: #025269;
+	padding: 5px 8px;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+	color: #025269;
+}
+
+/*******Home*******/
+
+section#home{
+	background-image: url("../images/background/living_room_view.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+section#home .container{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-line-pack: center;
+	    align-content: center;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	-ms-flex-item-align: center;
+	    align-self: center;
+	text-align: center;
+}
+
+section#home .container h1{
+	font-size: 2em;
+	color: white;
+	text-transform: lowercase;
+	font-weight: 600;
+	text-shadow: 1px 2px #555555;
+}
+
+
+/*# sourceMappingURL=style.css.map */
