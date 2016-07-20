@@ -1,0 +1,198 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+
+body{
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-size: 2em;
+	position: relative;
+	background-color: transparent;
+	font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Montserrat", Helvetica, sans-serif;
+	margin: 0;
+	color: white;
+	font-smoothing: antialiased;
+}
+
+p{
+	font-size: .9em;
+	line-height: 1.8em;
+}
+
+img{
+	
+}
+
+.page{
+	padding-top: 80px;
+}
+
+/*******Navigation*******/
+
+header .navbar {
+	padding: 30px 0;
+}
+
+header .navbar-default {
+	background-color: transparent;
+	border: none;
+}
+
+header .navbar-default .navbar-nav a{
+	color: #025269;
+	padding: 5px 13px;
+	transition: all .9s;
+}
+
+header .navbar-default .navbar-nav a:hover{
+	color: white;
+	transition: all .9s;
+}
+
+header .navbar-default .navbar-nav .active a{
+	background-color: transparent;
+	color: white;
+	border-bottom: 3px solid #025269;
+	text-shadow: none;
+}
+header .navbar-default .navbar-nav .active a:focus{
+	background-color: transparent;
+	color: white;
+}
+
+header .navbar-default .navbar-nav .active a:hover{
+	background-color: transparent;
+	text-shadow: none;
+	color: white;
+}
+
+/*******Brand******/
+.navbar-default .navbar-brand{
+	font-size: 1.4em;
+	color: white;
+	text-shadow: 1px 1px #999999;
+	padding: 5px 8px;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+	color: white;
+}
+
+/*******Home*******/
+
+section#home{
+	background-image: url("../images/background/living_room_view.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+}
+
+section#home .container{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-self: center;
+	text-align: center;
+}
+
+section#home .container h1{
+	font-size: 2em;
+	color: white;
+	text-transform: lowercase;
+	font-weight: 600;
+	text-shadow: 1px 2px #555555;
+}
+
+/********villa********/
+
+section#villa {
+	min-height: 500px;
+	display: flex;
+	flex-direction: column;
+	background-image: linear-gradient(#3E606F, #91AA9D);
+}
+section#villa .container h2{
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+	text-align: center;
+	padding: 20px 0;
+}
+section#villa .container .text-wrap{
+	padding: 30px 20px;
+}
+section#villa .container .text-wrap h4{
+	text-align: left;
+	padding: 20px 0;
+}
+section#villa .container .text-wrap p{
+	text-align: left;
+}
+
+/*******seperator*********/
+.seperator-wrapper{
+	align-self: flex-end;
+	width: 100%;
+	height: 400px;
+	background: transparent;
+}
+
+.seperator-wrapper .seperator{
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/background/pattern.png");
+	background-repeat: repeat;
+	background-position: center center;
+	opacity: .3;
+}
+
+/*********gallery**********/
+
+section#photos{
+	display: flex;
+	background-color: #F2DC9B;
+}
+#gallery{
+	height: 600px;
+  	overflow: hidden;
+}
+#gallery .item img {
+    width: 100%;
+    height: auto;
+ }
+
+
+/********reviews*******/
+
+section#reviews{
+	display: flex;
+	background-image: linear-gradient(#6AB4B8, #025269);
+}
+
+/*********prices*******/
+
+section#prices{
+	display: flex;
+	background-color: #025269;
+}
+
+/********details***********/
+
+section#details{
+	display: flex;
+	background-image: linear-gradient(#025269, #F2DC9B);
+}
+
+/********footer********/
+
+footer{
+	display: flex;
+	background-color: #FFFFFF;
+}
+
+
+
+
+
+
