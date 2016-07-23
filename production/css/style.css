@@ -1,100 +1,476 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
-
-body{
-	font-family: "Open Sans", Helvetica, sans-serif;
-	font-size: 2em;
-	position: relative;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-smoothing: antialiased
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Montserrat", Helvetica, sans-serif;
-	margin: 0;
+section#photos,
+section#villa {
+    min-height: 500px;
+    display: -ms-flexbox;
+    display: flex
 }
 
-img{
-	max-width: 200px;
+@font-face {
+    font-family: 'Josefin Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Josefin Slab'), local('JosefinSlab'), url(https://fonts.gstatic.com/s/josefinslab/v6/46aYWdgz-1oFX11flmyEfYnF5uFdDttMLvmWuJdhhgs.ttf) format('truetype')
 }
 
-/*******Navigation*******/
-
-header .navbar {
-	padding: 30px 0;
+@font-face {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/bIcY3_3JNqUVRAQQRNVteQ.ttf) format('truetype')
 }
 
-header .navbar-default {
-	background-color: transparent;
-	border: none;
+body {
+    font-family: Raleway, Helvetica, sans-serif;
+    font-size: 2em;
+    position: relative;
+    background-color: #FCFFF5
 }
 
-header .navbar-default .navbar-nav a{
-	color: white;
-	padding: 5px 8px;
-	transition: all .9s;
+h2,
+section#home .container h1 {
+    font-family: "Josefin Slab", Helvetica, sans-serif
 }
 
-header .navbar-default .navbar-nav a:hover{
-	color: #025269;
-	transition: all .9s;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: #fff;
+    text-align: center
 }
 
-header .navbar-default .navbar-nav .active a{
-	background-color: transparent;
-	color: #025269;
-	border-bottom: 3px solid #025269;
-	text-shadow: none;
-}
-header .navbar-default .navbar-nav .active a:focus{
-	background-color: transparent;
-	color: #025269;
+p {
+    font-size: .9em;
+    line-height: 1.8em
 }
 
-header .navbar-default .navbar-nav .active a:hover{
-	background-color: transparent;
-	text-shadow: none;
-	color: #025269;
+h2 {
+    font-size: 2em;
+    color: #3E606F;
+    text-align: center;
+    padding: 20px 0
 }
 
-/*******Brand******/
-.navbar-default .navbar-brand{
-	font-size: 1.4em;
-	color: #025269;
-	padding: 5px 8px;
+h3,
+h4 {
+    color: #91AA9D
 }
 
-.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
-	color: #025269;
+.page {
+    padding-top: 80px
 }
 
-/*******Home*******/
-
-section#home{
-	background-image: url("../images/background/living_room_view.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	display: -ms-flexbox;
-	display: flex;
+header .navbar.navbar-default.navbar-fixed-top {
+    border: none;
+    background-color: transparent;
+    height: 80px;
+    transition: all .8s
 }
 
-section#home .container{
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-line-pack: center;
-	    align-content: center;
-	-ms-flex-pack: center;
-	    justify-content: center;
-	-ms-flex-item-align: center;
-	    align-self: center;
-	text-align: center;
+header .navbar.navbar-default.navbar-fixed-top .collapse.navbar-collapse {
+    padding-top: 25px
 }
 
-section#home .container h1{
-	font-size: 2em;
-	color: white;
-	text-transform: lowercase;
-	font-weight: 600;
-	text-shadow: 1px 2px #555555;
+header .navbar-default .navbar-nav a {
+    color: #3E606F;
+    padding: 5px 13px
 }
 
+header .navbar-default.top-nav-collapse .navbar-nav a {
+    color: #FCFFF5
+}
 
+header .navbar-default .navbar-nav a:hover {
+    color: #193441
+}
+
+header .navbar-default .navbar-nav .active a {
+    background-color: transparent;
+    text-shadow: none
+}
+
+header .navbar-default .navbar-nav .active a:focus {
+    background-color: transparent
+}
+
+header .navbar-default .navbar-nav .active a:hover {
+    background-color: transparent;
+    text-shadow: none
+}
+
+header .navbar-default .navbar-nav .active a,
+header .navbar-default .navbar-nav .active a:focus,
+header .navbar-default .navbar-nav .active a:hover {
+    border: none;
+    color: #193441
+}
+
+header .navbar-default.navbar-fixed-top.top-nav-collapse {
+    background-color: #91AA9D;
+    z-index: 999;
+    transition: all .8s;
+    border: none
+}
+
+button.navbar-toggle.collapsed {
+    margin-top: 20px
+}
+
+#links a,
+#links a img {
+    margin: 0
+}
+
+header .navbar-default .navbar-toggle {
+    border: 2px solid #193441;
+    background-color: transparent;
+    height: 40px;
+    width: 50px
+}
+
+header .navbar-default .navbar-toggle:focus {
+    background-color: transparent
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #193441;
+    width: 28px
+}
+
+.navbar-default .navbar-toggle .icon-bar:nth-child(2) {
+    width: 22px
+}
+
+.navbar-default .navbar-toggle .icon-bar:last-child {
+    width: 22px
+}
+
+.navbar-default .navbar-brand {
+    transition: all .7s;
+    font-size: 1.4em;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+    padding-left: 8px;
+    padding-top: 25px;
+    background-color: transparent
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+    color: #fff
+}
+
+header .navbar-fixed-top.top-nav-collapse .navbar-brand {
+    font-size: 1.2em;
+    transition: all .7s
+}
+
+@media only screen and (max-width:768px) {
+    .navbar-default .navbar-brand {
+        font-size: 1.2em
+    }
+    .navbar-default .navbar-collapse {
+        border: none;
+        background-color: #91AA9D
+    }
+    header .navbar-default .navbar-nav a {
+        color: #FCFFF5;
+        padding: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%
+    }
+    header .navbar.navbar-default.navbar-fixed-top {
+        background-color: #91AA9D
+    }
+    .navbar-collapse {
+        box-shadow: none
+    }
+}
+
+section#home {
+    background: 0 0;
+    display: -ms-flexbox;
+    display: flex
+}
+
+section#home .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    text-align: center
+}
+
+section#home .container h1 {
+    font-size: 2.5em;
+    color: #fff;
+    text-transform: lowercase;
+    font-weight: 600;
+    text-shadow: 1px 2px #555
+}
+
+@media only screen and (max-width:768px) {
+    section#home .container h1 {
+        font-size: 2em
+    }
+}
+
+section#photos,
+section#reviews,
+section#villa {
+    -ms-flex-direction: column;
+        flex-direction: column
+}
+
+section#villa .container .text-wrap {
+    padding: 30px 20px
+}
+
+section#villa .container .text-wrap h4 {
+    text-align: left;
+    padding: 20px 0
+}
+
+section#villa .container .text-wrap p {
+    text-align: left
+}
+
+.seperator-wrapper {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 100%;
+    height: 400px;
+    background: 0 0
+}
+
+.line-seperator,
+.seperator {
+    background-position: center center
+}
+
+.line-seperator,
+footer,
+section#details {
+    background-color: #FCFFF5
+}
+
+.seperator {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/background/pattern.png);
+    background-repeat: repeat;
+    opacity: .3
+}
+
+.line-seperator {
+    height: 20px;
+    background-image: url(../images/seperator.png);
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+#links {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 40px 0
+}
+
+#links a {
+    padding: 0
+}
+
+section#reviews {
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 50px
+}
+
+section#reviews h4 {
+    padding: 3rem 0;
+    font-size: .9em;
+    font-weight: 100;
+    line-height: 1.6em
+}
+
+section#reviews a,
+section#reviews a:focus {
+    color: #193441;
+    text-decoration: none
+}
+
+section#reviews a:hover {
+    color: #3E606F;
+    text-decoration: none
+}
+
+section#reviews blockquote {
+    border-left: none;
+    padding-left: 2rem
+}
+
+section#reviews .quote {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center
+}
+
+section#reviews .quote h5 {
+    padding: 2rem 0;
+    font-size: 1.3em;
+    width: 90%;
+    text-align: center;
+    height: 70px;
+    color: #193441
+}
+
+section#reviews blockquote#michael .review-img,
+section#reviews blockquote#morgy .review-img,
+section#reviews blockquote#naina .review-img {
+    min-height: 300px;
+    width: 100%;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px 0 20px
+}
+
+section#reviews blockquote#naina .review-img {
+    background-image: url(../images/living_room/living_room_8.jpg)
+}
+
+section#reviews blockquote#morgy .review-img {
+    background-image: url(../images/bedrooms/bedroom_4.jpg)
+}
+
+section#reviews blockquote#michael .review-img {
+    background-image: url(../images/living_room/living_room_2.jpg)
+}
+
+section#reviews blockquote .quote p {
+    width: 90%;
+    padding: 1em 0
+}
+
+section#reviews blockquote .quote p.guest {
+    color: #3E606F;
+    text-align: center;
+    font-size: 1.2em
+}
+
+@media only screen and (min-width:992px) {
+    section#reviews .quote p {
+        min-height: 300px
+    }
+    section#reviews .quote p.guest {
+        min-height: 30px
+    }
+    section#reviews blockquote .quote p.guest {
+        text-align: left
+    }
+    section#reviews blockquote .review-img {
+        min-height: 200px;
+        width: 90%
+    }
+}
+
+section#details {
+    padding-bottom: 50px
+}
+
+section#details .container .detail {
+    border-radius: 5px;
+    min-height: 250px;
+    padding: 30px 20px;
+    text-align: center
+}
+
+section#details .detail h3 {
+    color: #3E606F;
+    padding: 20px 0;
+    text-align: center
+}
+
+section#details .detail p {
+    padding: 10px 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center
+}
+
+section#details .detail.prices p {
+    padding: 10px 40px
+}
+
+section#details .detail p .icon {
+    padding-right: 20px;
+    font-size: 2.5em;
+    color: #3E606F
+}
+
+section#details .detail p.extra-guest {
+    font-size: .8em;
+    opacity: .8;
+    text-align: right
+}
+
+@media only screen and (max-width:320px) {
+    section#details .detail p {
+        font-size: .7em
+    }
+    section#details .detail p .icon {
+        padding-right: 20px;
+        font-size: 2em;
+        color: #3E606F
+    }
+}
+
+footer {
+    min-height: 200px;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%
+}
+
+footer .social-media-btn {
+    text-align: center
+}
+
+footer .social-media-btn img {
+    max-width: 60px;
+    margin: 10px
+}
 /*# sourceMappingURL=style.css.map */

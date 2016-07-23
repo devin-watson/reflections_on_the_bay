@@ -1,9 +1,9 @@
 var gulp = require("gulp"),
-	gutil = require("gulp-util"),
-	postcss = require("gulp-postcss"),
-	sourcemaps = require("gulp-sourcemaps"),
-	autoprefixer = require("autoprefixer"),
-	connect = require("gulp-connect");
+  gutil = require("gulp-util"),
+  postcss = require("gulp-postcss"),
+  sourcemaps = require("gulp-sourcemaps"),
+  autoprefixer = require("autoprefixer"),
+  connect = require("gulp-connect");
 
 
 gulp.task('autoprefixer', function () {
@@ -30,4 +30,4 @@ gulp.task('watch', function () {
   gulp.watch(['./development/*.html'], ['html']);
 });
 
-gulp.task('default', ['connect', 'watch', 'autoprefixer']);
+gulp.task('default', ['connect', 'watch', 'html', 'autoprefixer']);
